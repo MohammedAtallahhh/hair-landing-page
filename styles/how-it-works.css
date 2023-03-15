@@ -1,6 +1,5 @@
 .how {
   padding-top: 9rem;
-  margin-bottom: 5rem;
 }
 
 .how__header {
@@ -43,6 +42,7 @@
 
 .info__desc {
   font-size: 1.6rem;
+  font-weight: 500;
   text-align: center;
   color: var(--accent-2);
 }
