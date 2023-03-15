@@ -56,3 +56,7 @@ a {
 img {
   max-width: 100%;
 }
+
+section {
+  overflow: hidden;
+}
