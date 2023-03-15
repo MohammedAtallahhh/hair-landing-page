@@ -23,6 +23,7 @@
 .content__text {
   flex-shrink: 0;
   padding-top: 6rem;
+  z-index: 10;
 }
 
 .content__image {
@@ -81,9 +82,36 @@
   font-weight: 400;
 }
 
+@media (max-width: 768px) {
+  .content__text__title {
+    font-size: 3.4rem;
+  }
+
+  .content__text__label {
+    font-size: 2.5rem;
+  }
+
+  .content__text__footer__item {
+    font-size: 1.8rem;
+  }
+
+  .hero__details {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .details__item img {
+    width: 6rem;
+  }
+
+  .details__item p {
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 991px) {
   .hero {
-    background: url("/assets/images/hero.png") no-repeat center center / cover;
+    background: url("/assets/images/hero.png") no-repeat 75% center / cover;
   }
 
   .hero::before {
@@ -95,8 +123,8 @@
     bottom: 0;
     background: linear-gradient(
       270deg,
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.25)
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.5)
     );
   }
 
