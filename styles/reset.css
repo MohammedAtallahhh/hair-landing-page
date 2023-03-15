@@ -26,8 +26,13 @@ body {
 
   --nav-bg: linear-gradient(180deg, #e5e4cf 0%, #f6f6ee 100%);
   --bg: hsl(0, 0%, 100%);
+  --bg-variant-1: #fbf1ee;
+  --bg-variant-2: #f6f6ee;
 
   --accent: #323232;
+  --accent-2: #2b1c08;
+  --accent-light: #707070;
+
   --primary: #4194f3;
 }
 

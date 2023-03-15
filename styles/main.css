@@ -2,3 +2,26 @@
 @import url("./helpers.css");
 @import url("./header.css");
 @import url("./hero.css");
+@import url("./product-components.css");
+
+.section__header {
+  text-align: center;
+}
+
+.section__header .title {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section__header .title img {
+  position: absolute;
+  right: 85%;
+  bottom: 25%;
+}
+
+.section__header .desc {
+  font-size: 1.8rem;
+  color: var(--accent-light);
+}
