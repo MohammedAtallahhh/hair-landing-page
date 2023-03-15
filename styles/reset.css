@@ -23,6 +23,12 @@ html,
 body {
   width: 100%;
   height: 100%;
+
+  --nav-bg: linear-gradient(180deg, #e5e4cf 0%, #f6f6ee 100%);
+  --bg: hsl(0, 0%, 100%);
+
+  --accent: #323232;
+  --primary: #4194f3;
 }
 
 html {
@@ -32,4 +38,16 @@ html {
 
 body {
   font-family: Tajawal, sans-serif;
+  font-size: 1.6rem;
+  background: var(--bg);
+  color: var(--accent);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
 }
