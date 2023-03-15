@@ -1,0 +1,35 @@
+/*============= Initial settings ==============*/
+
+/* Tajawal Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+/* Defining Makuktu font */
+@font-face {
+  font-family: "Makuktu";
+  src: url("../assets/fonts/Makutu.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  /* Resting font scalling to use relative units */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Tajawal, sans-serif;
+}
