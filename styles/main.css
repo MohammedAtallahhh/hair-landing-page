@@ -4,6 +4,7 @@
 @import url("./hero.css");
 @import url("./product-components.css");
 @import url("./how-it-works.css");
+@import url("./method.css");
 
 .logo {
   font-family: "Makuktu", sans-serif;
