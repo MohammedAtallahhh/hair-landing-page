@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./main.css">
     <title>Doressy</title>
 </head>
 
@@ -320,12 +321,12 @@
             </header>
 
             <!-- Slider -->
-            <div class="method__slider slider">
+            <div class="method__slider slider swiper">
 
-                <div class="slider__inner">
+                <div class="slider__inner swiper-wrapper">
 
                     <!-- Slide -->
-                    <div class="slide" data-index="0">
+                    <div class="slide swiper-slide" data-index="0">
                         <img src="/assets/images/method-slide-1.png" alt="Drying prodcut" class="slide__image">
 
                         <div class="slide__content">
@@ -336,7 +337,7 @@
                         </div>
                     </div>
                     <!-- Slide -->
-                    <div class="slide" data-index="1">
+                    <div class="slide swiper-slide" data-index="1">
                         <img src="/assets/images/method-slide-1.png" alt="Drying prodcut" class="slide__image">
 
                         <div class="slide__content">
@@ -347,7 +348,7 @@
                         </div>
                     </div>
                     <!-- Slide -->
-                    <div class="slide" data-index="2">
+                    <div class="slide swiper-slide" data-index="2">
                         <img src="/assets/images/method-slide-1.png" alt="Drying prodcut" class="slide__image">
 
                         <div class="slide__content">
@@ -358,7 +359,7 @@
                         </div>
                     </div>
                     <!-- Slide -->
-                    <div class="slide" data-index="3">
+                    <div class="slide swiper-slide" data-index="3">
                         <img src="/assets/images/method-slide-1.png" alt="Drying prodcut" class="slide__image">
 
                         <div class="slide__content">
@@ -370,16 +371,12 @@
                     </div>
                 </div>
 
-                <div class="slider__controls" dir="ltr">
-                    <span class="dot dot--active" data-index="0"></span>
-                    <span class="dot" data-index="1"></span>
-                    <span class="dot" data-index="2"></span>
-                    <span class="dot" data-index="3"></span>
-                </div>
+                <div class="slider__controls method__slider__controls swiper-pagination"></div>
             </div>
         </div>
     </section>
 
+    <!-- Results section -->
     <section class="results">
         <div class="container">
             <!-- Header -->
@@ -415,7 +412,31 @@
             </p>
         </div>
     </section>
-    <script src=" ./scripts/index.js"></script>
+
+    <!-- Achievement -->
+    <section class="achievements">
+        <div class="container">
+            <!-- Header -->
+            <header class="achievements__header section__header">
+                <h3 class="title">
+                    إنجازات دوريس
+                    <img src="/assets/images/leaf.png" alt="">
+                </h3>
+            </header>
+
+            <!-- Slider -->
+            <div class="swiper achievements__slider no-overflow">
+                <div class="swiper-wrapper">
+                </div>
+
+                <div class="achievements__slider__controls slider__controls"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src=" ./index.js" type="module"></script>
 </body>
 
 </html>

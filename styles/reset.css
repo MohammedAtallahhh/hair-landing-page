@@ -70,3 +70,11 @@ img {
 section {
   overflow: hidden;
 }
+
+.swiper-pagination {
+  all: unset;
+}
+
+.swiper.no-overflow {
+  overflow: unset !important;
+}
