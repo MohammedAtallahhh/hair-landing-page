@@ -40,6 +40,7 @@ html {
   --accent-light: #707070;
 
   --primary: #4194f3;
+  --primary-hover: #2077db;
 }
 
 body {
@@ -77,4 +78,9 @@ section {
 
 .swiper.no-overflow {
   overflow: unset !important;
+}
+
+button,
+input {
+  font-family: inherit;
 }

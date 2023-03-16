@@ -108,13 +108,12 @@ const populateAchievementsSlider = () => {
   achievements.forEach(({ image, content, name, title }, i) => {
     const slide = `
       <div class='swiper-slide slide'>
-        <img src="${image}" />
+        <img src="${image}" alt='person image'/>
         <p>${content}</p>
+        <h5 class='name'>${name}</h5>
+        <p>${title}</p>
 
-        <div class="slide__footer">
-          <h5 class='name'>${name}</h5>
-          <p>${title}</p>
-        </div>
+        <img src='/assets/images/quotes.png' class='quote'/>
       </div>
     `;
 
@@ -132,7 +131,7 @@ new Swiper(".method__slider", {
   },
 });
 
-const s = new Swiper(".achievements__slider", {
+new Swiper(".achievements__slider", {
   loop: true,
   spaceBetween: 20,
   slidesPerView: 1,

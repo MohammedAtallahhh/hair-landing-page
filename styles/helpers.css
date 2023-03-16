@@ -4,3 +4,50 @@
   height: 100%;
   margin: 0 auto;
 }
+
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+
+  font-size: 1.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.btn-primary {
+  font-weight: 700;
+  background: var(--primary);
+  color: white;
+  border-radius: 5rem 0px;
+
+  transition: 150ms ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: var(--primary-hover);
+}
+
+.btn-secondary {
+  font-weight: 700;
+
+  background: white;
+  color: var(--primary);
+
+  font-size: 1.4rem;
+
+  padding: 1em 2.5em;
+  border-radius: 0.5rem;
+
+  transition: 200ms ease;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  opacity: 0.8;
+}
