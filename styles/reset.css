@@ -48,6 +48,10 @@ body {
   color: var(--accent);
 }
 
+body.scrolled {
+  padding-top: 7.2rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;

@@ -5,6 +5,21 @@
   position: relative;
 }
 
+body.scrolled .main__header {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  z-index: 1000;
+
+  animation: slide 200ms ease-in-out forwards;
+}
+
+@keyframes slide {
+  100% {
+    top: 0;
+  }
+}
+
 .main__header .container {
   display: flex;
   justify-content: space-between;
