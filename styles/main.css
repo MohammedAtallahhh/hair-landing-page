@@ -5,6 +5,12 @@
 @import url("./product-components.css");
 @import url("./how-it-works.css");
 
+.logo {
+  font-family: "Makuktu", sans-serif;
+  font-weight: 400;
+}
+
+/* Section title and description */
 .section__header {
   text-align: center;
 }
@@ -38,11 +44,7 @@
   }
 }
 
-.logo {
-  font-family: "Makuktu", sans-serif;
-  font-weight: 400;
-}
-
+/* Golden rules and why us sections */
 .golden-rules,
 .why-us {
   display: flex;
@@ -112,5 +114,49 @@
 
   .content__item {
     font-size: 1.6rem;
+  }
+}
+
+.benefits {
+  padding: 3rem 0;
+  background: var(--bg-variant-2);
+}
+
+.benefits__phases {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  margin-top: 4rem;
+  position: relative;
+}
+
+.phase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  flex-basis: 100%;
+
+  text-align: center;
+  color: var(--accent-light);
+}
+
+.benefits__line {
+  position: absolute;
+  width: 59%;
+  left: 21%;
+}
+
+@media (min-width: 768px) {
+  .benefits {
+    padding: 6.5rem 0;
+  }
+
+  .phase {
+    flex-basis: 30%;
   }
 }
