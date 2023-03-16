@@ -184,3 +184,37 @@
     margin-bottom: 0;
   }
 }
+
+/* Results */
+.results {
+  padding: 4rem 0;
+  background: var(--bg-variant-3);
+}
+
+.results__images {
+  margin-bottom: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 3rem;
+}
+
+.results p {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .results__images {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 991px) {
+  .results p {
+    font-size: 1.8rem;
+  }
+}

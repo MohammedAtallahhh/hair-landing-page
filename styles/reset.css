@@ -23,22 +23,23 @@ html,
 body {
   width: 100%;
   height: 100%;
+}
+
+html {
+  /* Resting font scalling to use relative units */
+  font-size: 62.5%;
 
   --nav-bg: linear-gradient(180deg, #e5e4cf 0%, #f6f6ee 100%);
   --bg: hsl(0, 0%, 100%);
   --bg-variant-1: #fbf1ee;
   --bg-variant-2: #f6f6ee;
+  --bg-variant-3: #e5e4cf;
 
   --accent: #323232;
   --accent-2: #2b1c08;
   --accent-light: #707070;
 
   --primary: #4194f3;
-}
-
-html {
-  /* Resting font scalling to use relative units */
-  font-size: 62.5%;
 }
 
 body {
@@ -59,6 +60,7 @@ a {
 
 p {
   line-height: 1.6;
+  color: var(--accent-light);
 }
 
 img {
