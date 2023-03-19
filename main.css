@@ -13,12 +13,20 @@
 .logo {
   font-family: "Makuktu", sans-serif;
   font-weight: 400;
+
+  display: inline-block;
+  width: 10rem;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 12rem;
+  }
 }
 
 /*======================== Benefits =============*/
 .benefits {
-  padding: 4rem 0;
   background: var(--bg-variant-2);
 }
 
@@ -51,20 +59,12 @@
 }
 
 @media (min-width: 768px) {
-  .benefits {
-    padding: 6.5rem 0;
-  }
-
   .phase {
     flex-basis: 30%;
   }
 }
 
 /*===================== Hair cycle ==============*/
-.hair-cycle {
-  padding: 4rem 0;
-}
-
 .hair-cycle__image {
   display: flex;
   justify-content: center;
@@ -72,10 +72,6 @@
 }
 
 @media (min-width: 768px) {
-  .hair-cycle {
-    padding: 5rem 0;
-  }
-
   .hair-cycle .title {
     position: relative;
     top: 2rem;
@@ -84,10 +80,6 @@
 }
 
 /*==================== Why to use it ================*/
-.why {
-  padding: 3rem 0;
-}
-
 .why__images {
   margin: 3rem 0;
   display: flex;
@@ -101,10 +93,6 @@
 }
 
 @media (min-width: 768px) {
-  .why {
-    padding: 7rem 0 4rem;
-  }
-
   .why__images {
     flex-direction: row;
     gap: 1.6rem;
@@ -116,10 +104,6 @@
 }
 
 /*================ Pros =================*/
-.pros {
-  padding-top: 4rem;
-}
-
 .pros .section__header {
   margin-bottom: 2rem;
 }
@@ -165,7 +149,7 @@
 
 @media (min-width: 1200px) {
   .pros {
-    padding-top: 7rem;
+    padding-bottom: 0;
   }
 
   .pros .section__header {
@@ -187,7 +171,6 @@
 
 /*===================== Results ==============*/
 .results {
-  padding: 3rem 0;
   background: var(--bg-variant-3);
 }
 
@@ -207,10 +190,6 @@
 }
 
 @media (min-width: 768px) {
-  .results {
-    padding: 5rem 0 3rem;
-  }
-
   .results__images {
     flex-direction: row;
     gap: 4rem;
@@ -224,10 +203,6 @@
 }
 
 /*=================== Achievements =============*/
-.achievements {
-  padding: 4rem 0;
-}
-
 .achievements__slider {
   padding-top: 8rem;
 }
@@ -285,10 +260,6 @@
 }
 
 /* Advertisement */
-.advertisement {
-  padding-top: 4rem;
-}
-
 .advertisement__inner {
   display: flex;
   flex-direction: column-reverse;
@@ -365,10 +336,9 @@
 }
 
 /* Footer */
-
 .footer {
   background: url("./assets/images/footer.png") no-repeat center center / cover;
-  padding-top: 2rem;
+  padding-bottom: 0;
 }
 
 .footer__inner {

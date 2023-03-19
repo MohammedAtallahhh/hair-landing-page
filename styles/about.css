@@ -1,5 +1,5 @@
 .about {
-  padding-top: 3rem;
+  padding-bottom: 0;
 }
 
 .about__items {
@@ -47,7 +47,6 @@
   translate: -50% 50%;
 
   width: 65%;
-  height: 4rem;
 }
 
 @media (min-width: 768px) {

@@ -6,6 +6,10 @@
   justify-content: space-between;
 }
 
+.why-us {
+  margin-bottom: 4rem;
+}
+
 .golden-rules .section__header,
 .why-us .section__header {
   margin-bottom: 3rem;
@@ -50,6 +54,7 @@
 
   .why-us {
     flex-direction: row-reverse;
+    margin-bottom: 6rem;
   }
 
   .content__logo {

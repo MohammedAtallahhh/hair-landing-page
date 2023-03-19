@@ -1,5 +1,5 @@
 .how {
-  padding-top: 9rem;
+  padding-bottom: 0;
 }
 
 .how__header {
@@ -72,15 +72,10 @@
   z-index: 10;
 }
 
-@media (max-width: 991px) {
-  .how__info {
-    padding: 4rem 0;
-  }
-}
-
 @media (min-width: 991px) {
   .how__info {
     margin-top: -27rem;
+    padding-bottom: 6rem;
   }
 
   .info__desc {

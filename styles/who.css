@@ -1,6 +1,5 @@
 .who {
   background: var(--bg-variant-1);
-  padding: 4rem 0;
 }
 
 .who__content {
@@ -68,10 +67,6 @@
 }
 
 @media (min-width: 1200px) {
-  .who {
-    padding: 5rem 0;
-  }
-
   .who__content {
     gap: 7rem;
   }
