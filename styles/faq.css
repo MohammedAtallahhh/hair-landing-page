@@ -53,8 +53,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -70%);
-  transform: rotate(135deg);
+  transform: translate(-50%, -70%) rotate(135deg);
   width: 30%;
   height: 30%;
 
