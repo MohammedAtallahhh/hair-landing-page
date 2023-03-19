@@ -34,6 +34,10 @@
   list-style: none;
 }
 
+.who__content .content__text .item .cases li {
+  display: flex;
+}
+
 .who__content .content__text .item .cases li::before {
   content: ".";
   position: relative;

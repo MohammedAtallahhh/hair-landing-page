@@ -2,6 +2,7 @@ import { achievements } from "./data.js";
 
 const navbar = document.querySelector(".header__nav");
 const menuIcon = document.querySelector(".menu-icon");
+const menuClose = document.querySelector(".nav__list .close");
 
 const achievementsSlider = document.querySelector(".achievements__slider");
 
@@ -14,9 +15,33 @@ window.addEventListener("scroll", () => {
 });
 
 // Navbar mobile menu
-
 menuIcon.addEventListener("click", () => {
-  navbar.classList.toggle("header__nav--active");
+  navbar.classList.add("header__nav--active");
+  document.body.classList.add("no-scroll");
+});
+
+menuClose.addEventListener("click", () => {
+  navbar.classList.remove("header__nav--active");
+  document.body.classList.remove("no-scroll");
+});
+
+// Close navbar on clicking outside or clicking on a link
+document.addEventListener("click", (e) => {
+  if (
+    !e.target.closest(".header__nav") &&
+    !e.target.closest(".menu-icon") &&
+    navbar.classList.contains("header__nav--active")
+  ) {
+    navbar.classList.remove("header__nav--active");
+    document.body.classList.remove("no-scroll");
+  }
+});
+
+navbar.addEventListener("click", (e) => {
+  if (e.target.closest(".nav__link")) {
+    navbar.classList.remove("header__nav--active");
+    document.body.classList.remove("no-scroll");
+  }
 });
 
 const populateAchievementsSlider = () => {

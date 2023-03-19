@@ -53,6 +53,10 @@ body {
   color: var(--accent);
 }
 
+body.no-scroll {
+  overflow-y: hidden;
+}
+
 body.scrolled {
   padding-top: 7.2rem;
 }

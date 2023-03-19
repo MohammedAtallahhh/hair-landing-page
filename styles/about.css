@@ -18,6 +18,7 @@
 
 .about__items .item__image img {
   display: block;
+  width: 100%;
 }
 
 .about__items .item__content {
@@ -37,6 +38,7 @@
 .about__items .item__content .desc {
   font-size: 1.4rem;
   color: white;
+  text-overflow: ellipsis;
 }
 
 .about__items .item__content .btn {
