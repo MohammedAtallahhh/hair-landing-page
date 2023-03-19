@@ -31,12 +31,12 @@
 }
 
 .about__items .item__content .title {
-  font-weight: 500;
   margin-bottom: 1rem;
 }
 
 .about__items .item__content .desc {
   font-size: 1.4rem;
+  color: white;
 }
 
 .about__items .item__content .btn {

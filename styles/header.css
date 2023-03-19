@@ -67,7 +67,6 @@ body.scrolled .main__header {
     z-index: 1000;
 
     width: 100%;
-    max-width: 60rem;
     background: var(--nav-bg);
 
     padding: 4rem 2rem;

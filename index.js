@@ -29,7 +29,7 @@ const populateAchievementsSlider = () => {
         <h5 class='name'>${name}</h5>
         <p>${title}</p>
 
-        <img src='/assets/images/quotes.png' class='quote'/>
+        <img src='./assets/images/quotes.png' class='quote'/>
       </div>
     `;
 

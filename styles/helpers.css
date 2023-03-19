@@ -5,6 +5,20 @@
   margin: 0 auto;
 }
 
+section,
+main,
+footer {
+  padding: 4rem 0;
+}
+
+@media (min-width: 991px) {
+  section,
+  main,
+  footer {
+    padding: 6rem 0;
+  }
+}
+
 /* Section title and description */
 .section__header {
   text-align: center;
@@ -60,7 +74,7 @@
 /* Banner */
 .banner {
   background-color: var(--primary);
-  background-image: url("/assets/images/about-banner.png");
+  background-image: url("../assets/images/about-banner.png");
   background-repeat: repeat;
   background-position: left top;
   background-size: 8rem;
@@ -88,6 +102,7 @@
   background: none;
   border: none;
   outline: none;
+  height: 4rem;
 
   font-size: 1.6rem;
 
