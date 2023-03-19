@@ -91,6 +91,8 @@ const methodSliderControls = document.querySelector(
 
 const achievementsSlider = document.querySelector(".achievements__slider");
 
+const accordion = document.querySelector(".faq .content__accordion");
+
 // Make the header sticky on scroll
 window.addEventListener("scroll", () => {
   // header.classList.toggle("scrolled");
@@ -153,4 +155,19 @@ new Swiper(".achievements__slider", {
   pagination: {
     el: ".achievements__slider__controls",
   },
+});
+
+// Accordion
+accordion.addEventListener("click", (e) => {
+  const target = e.target.closest(".content__accordion .item__btn");
+  if (!target) return;
+
+  const lastActive = accordion.querySelector(
+    ".content__accordion .accordion__item.active"
+  );
+
+  lastActive &&
+    lastActive !== target.parentElement &&
+    lastActive.classList.remove("active");
+  target.parentElement.classList.toggle("active");
 });

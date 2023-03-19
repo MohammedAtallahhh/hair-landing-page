@@ -43,10 +43,14 @@
   font-weight: 900;
 }
 
-.who__content .content__image {
+.who__content .content__video {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.who__content .content__video video {
+  border-radius: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -58,7 +62,7 @@
     width: 40%;
   }
 
-  .who__content .content__image {
+  .who__content .content__video {
     width: 60%;
   }
 }

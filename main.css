@@ -8,6 +8,7 @@
 @import url("./styles/who.css");
 @import url("./styles/about.css");
 @import url("./styles/method.css");
+@import url("./styles/faq.css");
 
 .logo {
   font-family: "Makuktu", sans-serif;
@@ -279,5 +280,159 @@
 @media (min-width: 768px) {
   .achievements__slider {
     gap: 4rem;
+  }
+}
+
+/* Advertisement */
+.advertisement {
+  padding-top: 4rem;
+}
+
+.advertisement__inner {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3rem;
+
+  margin-bottom: 4rem;
+}
+
+.advertisement__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  text-align: center;
+}
+
+.advertisement__text .title {
+  font-size: 2.5rem;
+  line-height: 1.4em;
+}
+
+.advertisement__text .info {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .advertisement__inner {
+    flex-direction: row;
+  }
+
+  .advertisement__video {
+    flex: 1 0 62%;
+  }
+}
+
+@media (min-width: 991px) {
+  .advertisement__inner {
+    gap: 5.5rem;
+    margin-bottom: 8rem;
+  }
+
+  .advertisement__text .title {
+    font-size: 3.5rem;
+  }
+
+  .advertisement__text .info {
+    font-size: 3rem;
+  }
+
+  .advertisement__text .btn {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advertisement__text {
+    gap: 4rem;
+  }
+
+  .advertisement__text .title {
+    font-size: 4.6rem;
+  }
+
+  .advertisement__text .info {
+    font-size: 4rem;
+  }
+
+  .advertisement__text .btn {
+    font-size: 2.4rem;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background: url("./assets/images/footer.png") no-repeat center center / cover;
+  padding-top: 2rem;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  margin-bottom: 3rem;
+}
+
+.footer .logo {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.footer .title {
+  margin-bottom: 1rem;
+}
+
+.footer__content .info {
+  color: #404040;
+}
+
+.footer__links {
+  list-style: none;
+}
+
+.footer footer {
+  border-top: 1px solid #fff;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer footer img {
+  position: relative;
+  top: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__content {
+    flex-basis: 50%;
+  }
+
+  .footer__inner {
+    margin-bottom: 7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer .logo {
+    font-size: 4rem;
+  }
+
+  .footer .title {
+    font-size: 2rem;
+  }
+
+  .footer footer {
+    font-size: 2rem;
   }
 }

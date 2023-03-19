@@ -52,7 +52,7 @@
 
 @media (min-width: 768px) {
   .about__items {
-    padding-bottom: 10rem;
+    flex-direction: row;
   }
 }
 
@@ -62,7 +62,7 @@
   }
 
   .about__items {
-    flex-direction: row;
+    margin-bottom: 10rem;
   }
 
   .about__items .item__content .title {
