@@ -88,6 +88,10 @@
 }
 
 @media (min-width: 991px) {
+  .method {
+    padding: 7rem 0;
+  }
+
   .content__number {
     font-size: 10rem;
   }

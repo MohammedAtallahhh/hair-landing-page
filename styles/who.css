@@ -64,6 +64,10 @@
 }
 
 @media (min-width: 1200px) {
+  .who {
+    padding: 5rem 0;
+  }
+
   .who__content {
     gap: 7rem;
   }

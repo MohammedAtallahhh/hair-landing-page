@@ -14,7 +14,7 @@
   font-weight: 400;
 }
 
-/* Benefits */
+/*======================== Benefits =============*/
 .benefits {
   padding: 4rem 0;
   background: var(--bg-variant-2);
@@ -22,7 +22,6 @@
 
 .benefits__phases {
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -59,7 +58,7 @@
   }
 }
 
-/* Hair cycle */
+/*===================== Hair cycle ==============*/
 .hair-cycle {
   padding: 4rem 0;
 }
@@ -82,7 +81,7 @@
   }
 }
 
-/* Why */
+/*==================== Why to use it ================*/
 .why {
   padding: 3rem 0;
 }
@@ -113,7 +112,78 @@
     font-size: 1.8rem;
   }
 }
-/* Results */
+
+/*================ Pros =================*/
+.pros {
+  padding-top: 4rem;
+}
+
+.pros .section__header {
+  margin-bottom: 2rem;
+}
+
+.pros__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  margin-bottom: 4rem;
+}
+
+.pros__items .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  text-align: center;
+}
+
+.pros__items .item__image {
+  margin-bottom: 1.5rem;
+}
+
+.pros__items .item__title {
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+@media (min-width: 768px) {
+  .pros__items {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pros__items .item:nth-child(even) {
+    margin-top: 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pros {
+    padding-top: 7rem;
+  }
+
+  .pros .section__header {
+    margin-bottom: 0;
+  }
+
+  .pros__items {
+    margin-bottom: 6rem;
+  }
+
+  .pros__items .item__title {
+    font-size: 2rem;
+  }
+
+  .pros__items .item__info {
+    font-size: 1.8rem;
+  }
+}
+
+/*===================== Results ==============*/
 .results {
   padding: 3rem 0;
   background: var(--bg-variant-3);
@@ -151,7 +221,7 @@
   }
 }
 
-/* Achievements */
+/*=================== Achievements =============*/
 .achievements {
   padding: 4rem 0;
 }
