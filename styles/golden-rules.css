@@ -15,6 +15,10 @@
   margin-bottom: 3rem;
 }
 
+.golden-rules .section__header img {
+  display: none;
+}
+
 .content--half {
   padding: 4rem;
   flex: 1 0;
@@ -63,6 +67,12 @@
 
   .image--half {
     width: 50%;
+  }
+}
+
+@media (min-width: 991px) {
+  .golden-rules .section__header img {
+    display: block;
   }
 }
 

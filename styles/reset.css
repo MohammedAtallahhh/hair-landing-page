@@ -75,6 +75,7 @@ p {
 img,
 video {
   max-width: 100%;
+  user-select: none;
 }
 
 section {

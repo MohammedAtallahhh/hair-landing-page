@@ -40,11 +40,11 @@
   background: #dadada;
 
   position: relative;
-  transition: rotate 100ms ease-in-out;
+  transition: transform 100ms ease-in-out;
 }
 
 .accordion__item.active .item__btn .arrow {
-  rotate: 180deg;
+  transform: rotate(180deg);
   background: var(--primary);
 }
 
@@ -53,8 +53,8 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  translate: -50% -70%;
-  rotate: 135deg;
+  transform: translate(-50%, -70%);
+  transform: rotate(135deg);
   width: 30%;
   height: 30%;
 

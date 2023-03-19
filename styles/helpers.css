@@ -37,18 +37,11 @@ footer {
   position: absolute;
   left: -1.5rem;
   top: -2rem;
-  display: none;
 }
 
 .section__header .desc {
   font-size: 1.6rem;
   color: var(--accent-light);
-}
-
-@media (min-width: 768px) {
-  .section__header .title img {
-    display: block;
-  }
 }
 
 @media (min-width: 991px) {
