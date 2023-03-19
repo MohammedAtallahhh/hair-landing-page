@@ -5,6 +5,74 @@
   margin: 0 auto;
 }
 
+/* Section title and description */
+.section__header {
+  text-align: center;
+}
+
+.section__header .title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section__header .title img {
+  position: absolute;
+  left: -1.5rem;
+  top: -2rem;
+  display: none;
+}
+
+.section__header .desc {
+  font-size: 1.6rem;
+  color: var(--accent-light);
+}
+
+@media (min-width: 768px) {
+  .section__header .title img {
+    display: block;
+  }
+}
+
+@media (min-width: 991px) {
+  .section__header .title {
+    font-size: 2.4rem;
+  }
+
+  .section__header .desc {
+    font-size: 1.8rem;
+  }
+}
+
+/* Banner */
+.banner {
+  background-color: var(--primary);
+  background-image: url("/assets/images/about-banner.png");
+  background-repeat: repeat;
+  background-position: left top;
+  background-size: 8rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/* Buttons */
 .btn {
   background: none;
   border: none;

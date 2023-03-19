@@ -28,6 +28,8 @@ body {
 html {
   /* Resting font scalling to use relative units */
   font-size: 62.5%;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
 
   --nav-bg: linear-gradient(180deg, #e5e4cf 0%, #f6f6ee 100%);
   --bg: hsl(0, 0%, 100%);
@@ -46,12 +48,18 @@ html {
 body {
   font-family: Tajawal, sans-serif;
   font-size: 1.6rem;
+
   background: var(--bg);
   color: var(--accent);
 }
 
 body.scrolled {
   padding-top: 7.2rem;
+}
+
+::selection {
+  background: var(--primary);
+  color: white;
 }
 
 a {

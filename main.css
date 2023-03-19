@@ -11,47 +11,6 @@
   font-weight: 400;
 }
 
-/* Section title and description */
-.section__header {
-  text-align: center;
-}
-
-.section__header .title {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-bottom: 1.5rem;
-  position: relative;
-  display: inline-block;
-}
-
-.section__header .title img {
-  position: absolute;
-  left: -1.5rem;
-  top: -2rem;
-  display: none;
-}
-
-.section__header .desc {
-  font-size: 1.6rem;
-  color: var(--accent-light);
-}
-
-@media (min-width: 768px) {
-  .section__header .title img {
-    display: block;
-  }
-}
-
-@media (min-width: 991px) {
-  .section__header .title {
-    font-size: 2.4rem;
-  }
-
-  .section__header .desc {
-    font-size: 1.8rem;
-  }
-}
-
 /* Golden rules and why us sections */
 .golden-rules,
 .why-us {
@@ -246,29 +205,7 @@
   height: 4rem;
 }
 
-.banner {
-  background-color: var(--primary);
-  background-image: url("/assets/images/about-banner.png");
-  background-repeat: repeat-x;
-  background-position: left top;
-  background-size: 8%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-
-  padding: 2rem;
-  color: white;
-}
-
 @media (min-width: 768px) {
-  .banner {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
   .about__items {
     padding-bottom: 10rem;
   }
