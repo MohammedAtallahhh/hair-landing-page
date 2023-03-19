@@ -80,6 +80,12 @@ section {
   overflow: hidden;
 }
 
+button,
+input {
+  font-family: inherit;
+}
+
+/* Swiper */
 .swiper-pagination {
   all: unset;
 }
@@ -88,7 +94,17 @@ section {
   overflow: unset !important;
 }
 
-button,
-input {
-  font-family: inherit;
+.swiper-pagination-bullet {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+
+  background: #d9d9d9 !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 2.5em !important;
+  background: var(--primary) !important;
 }

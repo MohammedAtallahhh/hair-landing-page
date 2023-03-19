@@ -20,13 +20,13 @@
   position: relative;
 }
 
-.content__text {
+.hero__content .content__text {
   flex-shrink: 0;
   padding-top: 6rem;
   z-index: 10;
 }
 
-.content__image {
+.hero__content .content__image {
   width: 82rem;
   position: absolute;
   left: 0;
@@ -135,7 +135,7 @@
     z-index: 10;
   }
 
-  .content__image {
+  .hero__content .content__image {
     display: none;
   }
 }

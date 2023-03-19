@@ -56,22 +56,6 @@
   gap: 0.5em;
 }
 
-.swiper-pagination-bullet {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border-radius: 0.5em;
-
-  background: #d9d9d9 !important;
-  opacity: 1 !important;
-  cursor: pointer;
-}
-
-.swiper-pagination-bullet-active {
-  width: 2.5em !important;
-  background: var(--primary) !important;
-}
-
 @media (min-width: 768px) {
   .slider__inner .slide {
     flex-direction: row-reverse;
