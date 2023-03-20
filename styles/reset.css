@@ -92,8 +92,8 @@ input {
 }
 
 /* Swiper */
-.swiper.no-overflow {
-  overflow: unset !important;
+.swiper {
+  cursor: grabbing;
 }
 
 .swiper-wrapper {

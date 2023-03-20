@@ -13,6 +13,7 @@ window.addEventListener("scroll", () => {
   // header.classList.toggle("scrolled");
   document.body.classList.toggle("scrolled", scrollY > 200);
 });
+document.body.classList.toggle("scrolled", scrollY > 200);
 
 // Navbar mobile menu
 menuIcon.addEventListener("click", () => {
@@ -161,6 +162,7 @@ new Swiper(".results__slider", {
 new Swiper(".achievements__slider", {
   spaceBetween: 20,
   slidesPerView: 1,
+  autoplay: true,
   breakpoints: {
     541: {
       slidesPerView: 2,

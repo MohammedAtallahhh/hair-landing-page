@@ -8,15 +8,25 @@
 
 .about__items {
   margin-bottom: 6rem;
+  align-items: stretch;
 }
 
 .about__items .item {
-  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  height: unset;
+}
+
+.about__items .item__image {
+  flex: 1;
 }
 
 .about__items .item__image img {
   display: block;
   width: 100%;
+  height: 102%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
 }
 
 .about__items .item__content {
@@ -25,6 +35,7 @@
 
   text-align: center;
   padding: 0 2rem 4rem;
+  border-radius: 0 0 5px 5px;
 
   position: relative;
 }
@@ -53,10 +64,6 @@
 @media (min-width: 991px) {
   .about {
     padding-top: 6rem;
-  }
-
-  .about__items {
-    margin-bottom: 10rem;
   }
 
   .about__items .item__content .title {
