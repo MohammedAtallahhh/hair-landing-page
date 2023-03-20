@@ -1,4 +1,8 @@
 /* Golden rules and why us sections */
+#golden-rules {
+  padding: 0;
+}
+
 .golden-rules,
 .why-us {
   display: flex;

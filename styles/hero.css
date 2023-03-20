@@ -64,6 +64,11 @@
   font-size: 1.6rem;
 }
 
+.content__text__footer__item:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
 .content__text__footer__item:not(:last-child) {
   border-left: 1px solid white;
 }

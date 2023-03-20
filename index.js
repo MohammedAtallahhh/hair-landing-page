@@ -65,16 +65,98 @@ const populateAchievementsSlider = () => {
 
 populateAchievementsSlider();
 
+// Sliders
+new Swiper(".product-components__slider", {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  autoplay: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+
+    991: {
+      slidesPerView: 3,
+    },
+  },
+
+  pagination: {
+    el: ".components__slider__controls",
+    clickable: true,
+  },
+});
+
+new Swiper(".about__slider", {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  autoplay: true,
+
+  breakpoints: {
+    541: {
+      slidesPerView: 2,
+    },
+
+    991: {
+      slidesPerView: 3,
+    },
+  },
+
+  pagination: {
+    el: ".about__slider__controls",
+    clickable: true,
+  },
+});
+
+new Swiper(".pros__slider", {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  autoplay: true,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+
+    991: {
+      slidesPerView: 3,
+    },
+  },
+
+  pagination: {
+    el: ".pros__slider__controls",
+    clickable: true,
+  },
+});
+
 new Swiper(".method__slider", {
-  loop: true,
   autoplay: true,
   pagination: {
     el: ".method__slider__controls",
+    clickable: true,
+  },
+});
+
+new Swiper(".results__slider", {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  autoplay: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+
+    991: {
+      slidesPerView: 3,
+    },
+  },
+
+  pagination: {
+    el: ".results__slider__controls",
+    clickable: true,
   },
 });
 
 new Swiper(".achievements__slider", {
-  loop: true,
   spaceBetween: 20,
   slidesPerView: 1,
   breakpoints: {
@@ -94,6 +176,7 @@ new Swiper(".achievements__slider", {
 
   pagination: {
     el: ".achievements__slider__controls",
+    clickable: true,
   },
 });
 

@@ -2,13 +2,11 @@
   padding-bottom: 0;
 }
 
-.about__items {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
+.about__slider {
+  padding-bottom: 6rem;
+}
 
+.about__items {
   margin-bottom: 6rem;
 }
 
@@ -32,6 +30,7 @@
 }
 
 .about__items .item__content .title {
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
@@ -49,12 +48,6 @@
   transform: translate(-50%, 50%);
 
   width: 65%;
-}
-
-@media (min-width: 768px) {
-  .about__items {
-    flex-direction: row;
-  }
 }
 
 @media (min-width: 991px) {

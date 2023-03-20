@@ -118,12 +118,7 @@
   margin-bottom: 2rem;
 }
 
-.pros__items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-
+.pros__slider {
   margin-bottom: 4rem;
 }
 
@@ -146,17 +141,6 @@
   color: var(--primary);
 }
 
-@media (min-width: 768px) {
-  .pros__items {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .pros__items .item:nth-child(even) {
-    margin-top: 6rem;
-  }
-}
-
 @media (min-width: 1200px) {
   .pros {
     padding-bottom: 0;
@@ -177,6 +161,10 @@
   .pros__items .item__info {
     font-size: 1.8rem;
   }
+
+  .pros__items .item:nth-child(even) {
+    margin-top: 6rem;
+  }
 }
 
 /*===================== Results ==============*/
@@ -184,26 +172,25 @@
   background: var(--bg-variant-3);
 }
 
-.results__images {
+.results__slider {
   margin-bottom: 4rem;
+}
 
+.results__slider .swiper-slide {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
 
-  gap: 3rem;
+.results__slider .swiper-pagination-bullet {
+  background: #a5a5a5 !important;
+}
+
+.results__slider .swiper-pagination-bullet-active {
+  background: var(--primary) !important;
 }
 
 .results p {
   font-size: 1.4rem;
-}
-
-@media (min-width: 768px) {
-  .results__images {
-    flex-direction: row;
-    gap: 4rem;
-  }
 }
 
 @media (min-width: 991px) {
@@ -213,6 +200,20 @@
 }
 
 /*=================== Achievements =============*/
+.achievements {
+  position: relative;
+  overflow: unset;
+}
+
+.achievements__illustration {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  transform: translateY(-50%);
+  opacity: 0.4;
+}
+
 .achievements__slider {
   padding-top: 8rem;
 }
@@ -255,17 +256,15 @@
   opacity: 0.4;
 }
 
-.achievements__slider__controls {
-  margin-top: 4rem !important;
-  display: flex !important;
-  justify-content: center !important;
-  width: unset !important;
-  transform: unset !important;
-}
-
 @media (min-width: 768px) {
   .achievements__slider {
     gap: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .achievements__illustration {
+    opacity: 1;
   }
 }
 

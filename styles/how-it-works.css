@@ -27,6 +27,13 @@
 
 .how__info {
   background: var(--bg-variant-1);
+
+  background-image: url("../assets/images/illustration-1.png"),
+    url("../assets/images/illustration-2.png"),
+    url("../assets/images/illustration-3.png");
+  background-repeat: no-repeat;
+  background-position: top right, bottom right, bottom left;
+
   padding-bottom: 4rem;
   position: relative;
 }

@@ -115,32 +115,36 @@
             </header>
 
             <!-- Components -->
-            <div class="product-components__components">
-                <!-- Components item -->
-                <div class="component">
-                    <img src="./assets/images/product-components-1.png" alt="Hair braid" class="component__image">
+            <div class="swiper product-components__slider">
+                <div class="swiper-wrapper">
+                    <!-- Components item -->
+                    <div class="component swiper-slide">
+                        <img src="./assets/images/product-components-1.png" alt="Hair braid" class="component__image">
 
-                    <p class="component__desc">زيت اكليل الجبل بنسبة معينة تجعل من
-                        تأثيره مُضاعف عندما يمتزج مع زيت نواة
-                        المشمش وزيت الكمون الأسود</p>
-                </div>
-                <!-- Components item -->
-                <div class="component">
-                    <img src="./assets/images/product-components-2.png" alt="Hair braid" class="component__image">
+                        <p class="component__desc">زيت اكليل الجبل بنسبة معينة تجعل من
+                            تأثيره مُضاعف عندما يمتزج مع زيت نواة
+                            المشمش وزيت الكمون الأسود</p>
+                    </div>
+                    <!-- Components item -->
+                    <div class="component swiper-slide">
+                        <img src="./assets/images/product-components-2.png" alt="Hair braid" class="component__image">
 
-                    <p class="component__desc">نِسب مرتفعة من أحماض الأوميغا والسلينيوم تتحد مع الزيوت لحماية الشعرة
-                        وتقويتها لمنعها
-                        من التساقط.</p>
-                </div>
-                <!-- Components item -->
-                <div class="component">
-                    <img src="./assets/images/product-components-3.png" alt="Hair braid" class="component__image">
+                        <p class="component__desc">نِسب مرتفعة من أحماض الأوميغا والسلينيوم تتحد مع الزيوت لحماية الشعرة
+                            وتقويتها لمنعها
+                            من التساقط.</p>
+                    </div>
+                    <!-- Components item -->
+                    <div class="component swiper-slide">
+                        <img src="./assets/images/product-components-3.png" alt="Hair braid" class="component__image">
 
-                    <p class="component__desc">مجموعة من الفيتامينات والمعادن التي تتحد مع
-                        الزيوت النادرة وتنسجم معها لتحفيز خلايا الشعر
-                        والمحافظة على بنية الكيراتين لإحياء بصيلات الشعر
-                        التالفة وزيادة معدل نموها بشكل مضاعف وسريع</p>
+                        <p class="component__desc">مجموعة من الفيتامينات والمعادن التي تتحد مع
+                            الزيوت النادرة وتنسجم معها لتحفيز خلايا الشعر
+                            والمحافظة على بنية الكيراتين لإحياء بصيلات الشعر
+                            التالفة وزيادة معدل نموها بشكل مضاعف وسريع</p>
+                    </div>
                 </div>
+
+                <div class="components__slider__controls slider__controls"></div>
             </div>
         </div>
     </section>
@@ -165,9 +169,9 @@
 
         <div class="how__info">
             <!-- Illustrations -->
-            <img src="./assets/images/illustration-1.png" class="how__illustration how__illustration-1">
+            <!-- <img src="./assets/images/illustration-1.png" class="how__illustration how__illustration-1">
             <img src="./assets/images/illustration-2.png" class="how__illustration how__illustration-2">
-            <img src="./assets/images/illustration-3.png" class="how__illustration how__illustration-3">
+            <img src="./assets/images/illustration-3.png" class="how__illustration how__illustration-3"> -->
 
             <div class="container">
                 <h4 class="info__shadow-label">Doressy</h4>
@@ -181,75 +185,80 @@
         </div>
     </section>
 
-    <!-- Golden rules -->
-    <div id="golden-rules" class="golden-rules">
-        <div class="golden-rules__content content--half">
-            <div class="section__header">
-                <h3 class="title">
-                    القواعد الذهبية في رحلة استعادة شعرك
-                    <img src="./assets/images/leaf.png" alt="">
-                </h3>
+    <section id="golden-rules">
+        <!-- Golden rules -->
+        <div class="golden-rules">
+            <div class="golden-rules__content content--half">
+                <div class="section__header">
+                    <h3 class="title">
+                        القواعد الذهبية في رحلة استعادة شعرك
+                        <img src="./assets/images/leaf.png" alt="">
+                    </h3>
+                </div>
+
+                <div class="content__item">
+                    <h3>تجنب الوعود الكاذبة
+                    </h3>
+
+                    <p> الوقت هو الورقة الرابحة في رحلة استعادة شعرك فلا يوجد حل
+                        في يومين , عليك أن تمنح بصيلات شعرك وقتها لفترة لاتقل عن
+                        3 أشهر للتعافي .</p>
+                </div>
+                <div class="content__item">
+                    <h3>امنح شعرك الاهتمام الذي يحتاجه
+                    </h3>
+
+                    <p>
+                        شعرك يستحق الجودة والمكونات الطبيعية فلا تلجأ لاستخدام
+                        منتجات غير الموثوقة بهدف التوفير .</p>
+                </div>
+                <a href="/" class="content__logo logo">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
             </div>
 
-            <div class="content__item">
-                <h3>تجنب الوعود الكاذبة
-                </h3>
-
-                <p>  الوقت هو الورقة الرابحة في رحلة استعادة شعرك فلا يوجد حل
-                    في يومين , عليك أن تمنح بصيلات شعرك وقتها لفترة لاتقل عن
-                    3 أشهر للتعافي .</p>
+            <div class="golden-rules__image image--half">
+                <img src="./assets/images/golden-rules.png" alt="man">
             </div>
-            <div class="content__item">
-                <h3>امنح شعرك الاهتمام الذي يحتاجه
-                </h3>
 
-                <p>
-                    شعرك يستحق الجودة والمكونات الطبيعية فلا تلجأ لاستخدام
-                    منتجات غير الموثوقة بهدف التوفير .</p>
-            </div>
-            <h2 class="content__logo logo">Doressy</h2>
         </div>
 
-        <div class="golden-rules__image image--half">
-            <img src="./assets/images/golden-rules.png" alt="man">
-        </div>
+        <!-- Why us -->
+        <div class="why-us">
+            <div class="why-us__content content--half">
+                <div class="section__header">
+                    <h3 class="title">
+                        لماذا تختارنا <img src="./assets/images/leaf.png" alt="">
+                    </h3>
+                </div>
 
-    </div>
+                <div class="content__item">
+                    <h3>تجنب الوعود الكاذبة
+                    </h3>
 
-    <!-- Why us -->
-    <div class="why-us">
-        <div class="why-us__content content--half">
-            <div class="section__header">
-                <h3 class="title">
-                    لماذا تختارنا <img src="./assets/images/leaf.png" alt="">
-                </h3>
+                    <p> الوقت هو الورقة الرابحة في رحلة استعادة شعرك فلا يوجد حل
+                        في يومين , عليك أن تمنح بصيلات شعرك وقتها لفترة لاتقل عن
+                        3 أشهر للتعافي .</p>
+                </div>
+                <div class="content__item">
+                    <h3>امنح شعرك الاهتمام الذي يحتاجه
+                    </h3>
+
+                    <p>
+                        شعرك يستحق الجودة والمكونات الطبيعية فلا تلجأ لاستخدام
+                        منتجات غير الموثوقة بهدف التوفير .</p>
+                </div>
+                <a href="/" class="content__logo logo">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
             </div>
 
-            <div class="content__item">
-                <h3>تجنب الوعود الكاذبة
-                </h3>
-
-                <p> الوقت هو الورقة الرابحة في رحلة استعادة شعرك فلا يوجد حل
-                    في يومين , عليك أن تمنح بصيلات شعرك وقتها لفترة لاتقل عن
-                    3 أشهر للتعافي .</p>
+            <div class="why-us__image image--half">
+                <img src="./assets/images/why-us.png" alt="man">
             </div>
-            <div class="content__item">
-                <h3>امنح شعرك الاهتمام الذي يحتاجه
-                </h3>
 
-                <p>
-                    شعرك يستحق الجودة والمكونات الطبيعية فلا تلجأ لاستخدام
-                    منتجات غير الموثوقة بهدف التوفير .</p>
-            </div>
-            <h2 class="content__logo logo">Doressy</h2>
         </div>
-
-        <div class="why-us__image image--half">
-            <img src="./assets/images/why-us.png" alt="man">
-        </div>
-
-    </div>
-
+    </section>
     <!-- Benefits -->
     <section id="benefits" class="benefits">
         <div class="container">
@@ -323,52 +332,57 @@
             </header>
 
             <!-- Items -->
-            <div class="about__items">
+            <div class="swiper about__slider">
 
-                <!-- Item -->
-                <div class="item">
-                    <div class="item__image">
-                        <img src="./assets/images/about-1.png" alt="">
+                <div class="about__items swiper-wrapper">
+
+                    <!-- Item -->
+                    <div class="swiper-slide item">
+                        <div class="item__image">
+                            <img src="./assets/images/about-1.png" alt="">
+                        </div>
+
+                        <div class="item__content">
+                            <h5 class="title">سيرم تكثيف وإنبات شعر اللحية للرجال</h5>
+
+                            <p class="desc">يأتي كقطعة فردية أو مجموعة من 3 قطع يعمل على إنبات</p>
+
+                            <a href="#" class="btn btn-primary">المزيد</a>
+                        </div>
                     </div>
 
-                    <div class="item__content">
-                        <h5 class="title">سيرم تكثيف وإنبات شعر اللحية للرجال</h5>
+                    <!-- Item -->
+                    <div class="swiper-slide item">
+                        <div class="item__image">
+                            <img src="./assets/images/about-2.png" alt="">
+                        </div>
 
-                        <p class="desc">يأتي كقطعة فردية أو مجموعة من 3 قطع يعمل على إنبات</p>
+                        <div class="item__content">
+                            <h5 class="title">سيرم تكثيف وإنبات شعر اللحية للرجال</h5>
 
-                        <a href="#" class="btn btn-primary">المزيد</a>
+                            <p class="desc">هو العلاج الوحيد للصلع عند الرجال بعيدا عن ألم العمليات</p>
+
+                            <a href="#" class="btn btn-primary">المزيد</a>
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="swiper-slide item">
+                        <div class="item__image">
+                            <img src="./assets/images/about-3.png" alt="">
+                        </div>
+
+                        <div class="item__content">
+                            <h5 class="title">سيرم تكثيف وإنبات شعر اللحية للرجال</h5>
+
+                            <p class="desc">يأتي كقطعة فردية أو مجموعة من 3 قطع يعمل </p>
+
+                            <a href="#" class="btn btn-primary">المزيد</a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Item -->
-                <div class="item">
-                    <div class="item__image">
-                        <img src="./assets/images/about-2.png" alt="">
-                    </div>
-
-                    <div class="item__content">
-                        <h5 class="title">سيرم تكثيف وإنبات شعر اللحية للرجال</h5>
-
-                        <p class="desc">هو العلاج الوحيد للصلع عند الرجال بعيدا عن ألم العمليات</p>
-
-                        <a href="#" class="btn btn-primary">المزيد</a>
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="item">
-                    <div class="item__image">
-                        <img src="./assets/images/about-3.png" alt="">
-                    </div>
-
-                    <div class="item__content">
-                        <h5 class="title">سيرم تكثيف وإنبات شعر اللحية للرجال</h5>
-
-                        <p class="desc">يأتي كقطعة فردية أو مجموعة من 3 قطع يعمل </p>
-
-                        <a href="#" class="btn btn-primary">المزيد</a>
-                    </div>
-                </div>
+                <div class="about__slider__controls slider__controls"></div>
             </div>
 
             <div class="about__banner banner">
@@ -478,45 +492,50 @@
                 </h3>
             </header>
 
-            <div class="pros__items">
-                <!-- Item -->
-                <div class="item">
-                    <img src="./assets/images/pros-1.png" alt="Some plant" class="item__image">
+            <div class="swiper pros__slider">
 
-                    <h4 class="item__title">المنتج آمن 100 %</h4>
+                <div class="pros__items swiper-wrapper">
+                    <!-- Item -->
+                    <div class="swiper-slide item">
+                        <img src="./assets/images/pros-1.png" alt="Some plant" class="item__image">
 
-                    <p class="item__info">
-                        حيث يمكن استخدامه للحامل والمرضع
-                        و كل من يعاني من الأمراض الجلدية
-                        كالبهاق أو التحسس المزمن 
-                    </p>
+                        <h4 class="item__title">المنتج آمن 100 %</h4>
+
+                        <p class="item__info">
+                            حيث يمكن استخدامه للحامل والمرضع
+                            و كل من يعاني من الأمراض الجلدية
+                            كالبهاق أو التحسس المزمن 
+                        </p>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="swiper-slide item">
+                        <img src="./assets/images/pros-2.png" alt="Some plant" class="item__image">
+
+                        <h4 class="item__title">المنتجات موثوقة ومرخصة</h4>
+
+                        <p class="item__info">
+                            حيث يمكن استخدامه للحامل والمرضع
+                            و كل من يعاني من الأمراض الجلدية
+                            كالبهاق أو التحسس المزمن
+                        </p>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="swiper-slide item">
+                        <img src="./assets/images/pros-3.png" alt="Some plant" class="item__image">
+
+                        <h4 class="item__title">الضمان الذهبي</h4>
+
+                        <p class="item__info">
+                            حيث يمكن استخدامه للحامل والمرضع
+                            و كل من يعاني من الأمراض الجلدية
+                            كالبهاق أو التحسس المزمن
+                        </p>
+                    </div>
                 </div>
 
-                <!-- Item -->
-                <div class="item">
-                    <img src="./assets/images/pros-2.png" alt="Some plant" class="item__image">
-
-                    <h4 class="item__title">المنتجات موثوقة ومرخصة</h4>
-
-                    <p class="item__info">
-                        حيث يمكن استخدامه للحامل والمرضع
-                        و كل من يعاني من الأمراض الجلدية
-                        كالبهاق أو التحسس المزمن
-                    </p>
-                </div>
-
-                <!-- Item -->
-                <div class="item">
-                    <img src="./assets/images/pros-3.png" alt="Some plant" class="item__image">
-
-                    <h4 class="item__title">الضمان الذهبي</h4>
-
-                    <p class="item__info">
-                        حيث يمكن استخدامه للحامل والمرضع
-                        و كل من يعاني من الأمراض الجلدية
-                        كالبهاق أو التحسس المزمن 
-                    </p>
-                </div>
+                <div class="pros__slider__controls slider__controls"></div>
             </div>
 
             <div class="banner">
@@ -546,7 +565,7 @@
                 <div class="slider__inner swiper-wrapper">
 
                     <!-- Slide -->
-                    <div class="slide swiper-slide" data-index="0">
+                    <div class="slide swiper-slide">
                         <img src="./assets/images/method-slide-1.png" alt="Drying prodcut" class="slide__image">
 
                         <div class="slide__content">
@@ -557,7 +576,7 @@
                         </div>
                     </div>
                     <!-- Slide -->
-                    <div class="slide swiper-slide" data-index="1">
+                    <div class="slide swiper-slide">
                         <img src="./assets/images/method-slide-1.png" alt="Drying prodcut" class="slide__image">
 
                         <div class="slide__content">
@@ -568,7 +587,7 @@
                         </div>
                     </div>
                     <!-- Slide -->
-                    <div class="slide swiper-slide" data-index="2">
+                    <div class="slide swiper-slide">
                         <img src="./assets/images/method-slide-1.png" alt="Drying prodcut" class="slide__image">
 
                         <div class="slide__content">
@@ -579,7 +598,7 @@
                         </div>
                     </div>
                     <!-- Slide -->
-                    <div class="slide swiper-slide" data-index="3">
+                    <div class="slide swiper-slide">
                         <img src="./assets/images/method-slide-1.png" alt="Drying prodcut" class="slide__image">
 
                         <div class="slide__content">
@@ -591,7 +610,7 @@
                     </div>
                 </div>
 
-                <div class="slider__controls method__slider__controls swiper-pagination"></div>
+                <div class="slider__controls method__slider__controls"></div>
             </div>
         </div>
     </section>
@@ -607,18 +626,23 @@
                 </h3>
             </header>
 
-            <div class="results__images">
-                <div>
-                    <img src="./assets/images/results-1.png" alt="">
+            <div class="swiper results__slider">
+
+                <div class="results__images swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/images/results-1.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/images/results-2.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/images/results-3.png" alt="">
+                    </div>
                 </div>
 
-                <div>
-                    <img src="./assets/images/results-2.png" alt="">
-                </div>
-
-                <div>
-                    <img src="./assets/images/results-3.png" alt="">
-                </div>
+                <div class="slider__controls results__slider__controls"></div>
             </div>
 
             <p>
@@ -635,6 +659,9 @@
 
     <!-- Achievements -->
     <section class="achievements">
+        <!-- Illustration -->
+        <img src="./assets/images/achievements-illustration.png" alt="illustration" class="achievements__illustration">
+
         <div class="container">
             <!-- Header -->
             <header class="achievements__header section__header">
@@ -645,7 +672,7 @@
             </header>
 
             <!-- Slider -->
-            <div class="swiper achievements__slider no-overflow">
+            <div class="swiper achievements__slider">
                 <div class="swiper-wrapper">
                 </div>
 
