@@ -26,10 +26,6 @@
   cursor: pointer;
 }
 
-.accordion__item.active .item__btn {
-  background: #e1e1e1;
-}
-
 .content__accordion .item__btn .mark {
   margin-left: 1rem;
 }

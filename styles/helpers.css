@@ -35,8 +35,9 @@ footer {
 
 .section__header .title img {
   position: absolute;
-  left: -1.5rem;
-  top: -2rem;
+  left: 0;
+  top: 0;
+  transform: translate(-55%, -55%);
 }
 
 .section__header .desc {

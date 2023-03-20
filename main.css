@@ -223,17 +223,17 @@
   flex-direction: column;
   align-items: center;
 
-  padding: 2rem;
+  padding: 6rem 2rem 2rem;
   border-radius: 2rem;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
 
   position: relative;
 }
 
-.achievements__slider .slide img {
+.achievements__slider .slide .image {
   width: 10rem;
-  position: relative;
-  top: -7rem;
+  position: absolute;
+  top: -5rem;
 }
 
 .achievements__slider .slide p {
@@ -247,12 +247,12 @@
 .achievements__slider .slide .quote {
   position: absolute;
   left: 1rem;
-  top: 85%;
+  bottom: 3rem;
   width: 5rem;
   height: 4rem;
 
   object-fit: contain;
-  transform: rotate(-19.23deg);
+  transform: rotate(-10deg);
   opacity: 0.4;
 }
 
