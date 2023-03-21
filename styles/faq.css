@@ -9,6 +9,12 @@
   gap: 3rem;
 }
 
+.faq__content .content__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .content__accordion .item__btn {
   display: flex;
   align-items: center;
@@ -80,6 +86,7 @@
 @media (min-width: 768px) {
   .faq__content {
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
 

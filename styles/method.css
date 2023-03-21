@@ -2,8 +2,8 @@
   padding: 4rem 0;
 }
 
-.method__header {
-  margin-bottom: 1.5rem;
+.method .slider__inner {
+  margin-bottom: 2rem;
 }
 
 .slider__inner .slide {
@@ -14,10 +14,11 @@
 
 .slide__content {
   padding: 2rem;
+  text-align: center;
 }
 
 .content__number {
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: 700;
   color: var(--primary);
 }
@@ -52,10 +53,12 @@
 
   .method__slider__controls {
     position: absolute !important;
+    width: fit-content !important;
     right: 20% !important;
     left: unset !important;
-    bottom: 15% !important;
+    bottom: 13% !important;
     z-index: 10;
+    margin: 0 auto;
   }
 
   .swiper-pagination-bullet-active {

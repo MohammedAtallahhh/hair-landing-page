@@ -92,7 +92,9 @@ new Swiper(".product-components__slider", {
 new Swiper(".about__slider", {
   spaceBetween: 20,
   slidesPerView: 1,
-  autoplay: true,
+  autoplay: {
+    disableOnInteraction: false,
+  },
 
   breakpoints: {
     541: {
@@ -113,7 +115,9 @@ new Swiper(".about__slider", {
 new Swiper(".pros__slider", {
   spaceBetween: 20,
   slidesPerView: 1,
-  autoplay: true,
+  autoplay: {
+    disableOnInteraction: false,
+  },
 
   breakpoints: {
     768: {
@@ -132,7 +136,9 @@ new Swiper(".pros__slider", {
 });
 
 new Swiper(".method__slider", {
-  autoplay: true,
+  autoplay: {
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".method__slider__controls",
     clickable: true,
@@ -142,7 +148,9 @@ new Swiper(".method__slider", {
 new Swiper(".results__slider", {
   spaceBetween: 20,
   slidesPerView: 1,
-  autoplay: true,
+  autoplay: {
+    disableOnInteraction: false,
+  },
   breakpoints: {
     768: {
       slidesPerView: 2,
@@ -160,24 +168,27 @@ new Swiper(".results__slider", {
 });
 
 new Swiper(".achievements__slider", {
-  spaceBetween: 20,
+  spaceBetween: 10,
   slidesPerView: 1,
-  autoplay: true,
+  autoplay: {
+    disableOnInteraction: false,
+  },
   breakpoints: {
     541: {
       slidesPerView: 2,
+      spaceBetween: 10,
     },
 
     991: {
       slidesPerView: 3,
+      spaceBetween: 40,
     },
 
     1200: {
       slidesPerView: 4,
-      spaceBetween: 50,
+      spaceBetween: 40,
     },
   },
-  // autoplay: true,
 
   pagination: {
     el: ".achievements__slider__controls",

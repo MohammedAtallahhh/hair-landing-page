@@ -8,8 +8,6 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .why-us {

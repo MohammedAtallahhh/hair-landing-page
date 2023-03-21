@@ -40,7 +40,6 @@
   justify-content: center;
   gap: 3rem;
 
-  margin-top: 4rem;
   position: relative;
 }
 
@@ -75,6 +74,17 @@
 }
 
 /*===================== Hair cycle ==============*/
+.hair-cycle {
+  position: relative;
+}
+
+.hair-cycle__illustration {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10rem;
+}
+
 .hair-cycle__image {
   display: flex;
   justify-content: center;
@@ -86,6 +96,15 @@
     position: relative;
     top: 2rem;
     margin-bottom: 0;
+  }
+  .hair-cycle__illustration {
+    width: unset;
+  }
+}
+
+@media (min-width: 991px) {
+  .hair-cycle {
+    padding: 3rem 0 6rem;
   }
 }
 
@@ -191,6 +210,7 @@
 
 .results p {
   font-size: 1.4rem;
+  text-align: center;
 }
 
 @media (min-width: 991px) {
@@ -215,7 +235,7 @@
 }
 
 .achievements__slider {
-  padding-top: 8rem;
+  padding: 8rem 1rem 0;
 }
 
 .achievements__slider .slide {
@@ -223,7 +243,7 @@
   flex-direction: column;
   align-items: center;
 
-  padding: 6rem 2rem 2rem;
+  padding: 6rem 1rem 2rem;
   border-radius: 2rem;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
 
@@ -237,7 +257,8 @@
 }
 
 .achievements__slider .slide p {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  font-weight: 500;
 }
 
 .achievements__slider .slide .name {
@@ -256,9 +277,9 @@
   opacity: 0.4;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   .achievements__slider {
-    gap: 4rem;
+    padding: 8rem 2rem 0;
   }
 }
 
@@ -295,6 +316,14 @@
 .advertisement__text .info {
   font-size: 2.2rem;
   font-weight: 500;
+}
+
+.advertisement__text .btn {
+  width: 70%;
+}
+
+.advertisement__video video {
+  border-radius: 5px;
 }
 
 @media (min-width: 768px) {
@@ -350,6 +379,10 @@
   padding-bottom: 0;
 }
 
+.footer .container {
+  max-width: 100rem;
+}
+
 .footer__inner {
   display: flex;
   flex-direction: column;
@@ -359,12 +392,12 @@
 }
 
 .footer .logo {
-  font-size: 3rem;
   margin-bottom: 2rem;
 }
 
 .footer .title {
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .footer__content .info {
@@ -373,6 +406,9 @@
 
 .footer__links {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .footer footer {
@@ -403,13 +439,18 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 991px) {
   .footer .logo {
-    font-size: 4rem;
+    width: 18rem;
   }
 
   .footer .title {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+
+  .footer__content .info,
+  .footer__links a {
+    font-size: 1.8rem;
   }
 
   .footer footer {
