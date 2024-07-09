@@ -10,6 +10,11 @@
 @import url("./styles/method.css");
 @import url("./styles/faq.css");
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 .logo {
   font-family: "Makuktu", sans-serif;
   font-weight: 400;
